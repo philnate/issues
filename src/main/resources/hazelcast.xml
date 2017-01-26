@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hazelcast xsi:schemaLocation="http://www.hazelcast.com/schema/config hazelcast-config-3.5.xsd"
+           xmlns="http://www.hazelcast.com/schema/config"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+    <network>
+        <port auto-increment="false">5701</port>
+        <outbound-ports>
+            <ports>5701</ports>
+        </outbound-ports>
+        <join>
+            <multicast enabled="false" />
+            <tcp-ip enabled="false" />
+            <aws enabled="false" />
+        </join>
+    </network>
+
+</hazelcast>
